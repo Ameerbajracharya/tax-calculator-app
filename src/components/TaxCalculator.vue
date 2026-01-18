@@ -50,7 +50,7 @@ const calculateTax = async () => {
 
   try {
     // Add 5-second delay
-    await new Promise(resolve => setTimeout(resolve, 5000));
+    // await new Promise(resolve => setTimeout(resolve, 5000));
     
     result.value = await taxService.calculateTax({
       income: income.value,
