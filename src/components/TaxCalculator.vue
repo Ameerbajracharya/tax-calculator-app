@@ -28,7 +28,7 @@ onMounted(async () => {
 
   } catch (err: any) {
     console.error('Error loading tax years:', err);
-    error.value = `Failed to load tax years: ${err.message}. Please ensure the API is running at http://localhost:3000`;
+    error.value = `Failed to load tax years: ${err.message}. Please ensure the API is running at ` . (import.meta.env.VITE_API_BASE_URL);
   } finally {
     loadingYears.value = false;
   }
